@@ -1,0 +1,27 @@
+﻿<Window x:Class="ООО_обувь.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ООО_обувь"
+        mc:Ignorable="d"
+      Title="ООО «ЧитайГород»" Height="450" Width="800" >
+    <Grid >
+        <Viewbox >
+            <Grid Height="450" Width="800">
+                <Border  CornerRadius="14" Padding="28">
+                    <StackPanel>
+                        <TextBlock Text="ООО «ЧитайГород»" FontSize="26"  />
+                        <TextBlock Text="Логин" />
+                        <TextBox x:Name="TextBoxLogin" />
+                        <TextBlock Text="Пароль" Margin="4,8,4,0" />
+                        <PasswordBox x:Name="TextBoxPassword" Padding="8,6" Margin="4" />
+                        <Button Content="Войти" Click="Login_Click" Margin="4,14,4,4"  />
+                        <Button Content="Гость" Click="Guest_Click"  />
+                        <Image x:Name="шьфпу" Height="158" Source="/icon.png" Stretch="Fill" Width="473"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Window>
